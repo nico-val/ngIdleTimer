@@ -1,8 +1,8 @@
-angular.module('ngIdle',[])
+angular.module('ngIdleTimer',[])
 
-    .factory('ngIdle', function($compile,$rootScope,$document) {
+    .factory('ngIdleTimer', function($compile,$rootScope,$document) {
         return {
-            setOnIdle: function(func,timeout){
+            onIdleTimeOut: function(func,timeout){
                 var idleTime = 0;
                 $document.ready(function () {
                     var idleInterval = setInterval(timerIncrement, 1000);
