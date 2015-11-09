@@ -26,7 +26,7 @@ AngularJS Module to execute a function when no there's no user interaction after
     
 2. Set your Idle Timer using
     ```javascript
-    ngIdleTimer.onTimeOut(function, numSeconds);
+    ngIdleTimer.onIdleTimeOut(function, numSeconds);
     ```
     **function** is, of course, the function you wan't to be executed when no user interaction is detected after **numSeconds** seconds
 
